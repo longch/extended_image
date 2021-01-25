@@ -320,6 +320,12 @@ class ExtendedImageEditorState extends State<ExtendedImageEditor> {
       _editActionDetails.flip();
     });
   }
+  
+  void setCropAspectRatio(double ratio) {
+    setStte(() {
+      _editActionDetails.cropAspectRatio = ratio;
+    }); 
+  }
 
   void reset() {
     setState(() {
